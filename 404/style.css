@@ -1,0 +1,162 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.container .topo{
+    width: 100%;
+    height: 10%;
+    display: flex;
+}
+.container .topo .esquerda{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;    
+}
+.container .topo .direita{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+.container .topo .direita .menu{
+    display: flex;
+    gap: 20px;
+}
+.container .topo .direita .icones{
+font-size: 20px;
+padding-left: 20px;
+}
+.container .meio{
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+.container .meio .esquerda{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .meio .direita{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container .meio .direita .info{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+#btn-1{
+    width: 250px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+#btn-2{
+    width: 250px;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background: none;
+    transition: all 300ms ease;
+}
+#btn-1:hover{
+    cursor: pointer;
+    background-color: gray;
+    transition: all 300ms ease;
+}
+#btn-2:hover{
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: gray;
+}
+.container .fim{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: end;
+}
+.container .fim .redes{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .fim .redes .texto{
+    font-weight: bold;
+    font-size: 18px;
+}
+.container .fim .redes .botoes-social{
+    padding-right: 200px;
+}
+.botoes-social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.botoes-social button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    transition: background 0.3s;
+}
+
+.botoes-social button img {
+    width: 20px;
+    height: 20px;
+}
+
+.botoes-social .facebook {
+    background: #3b5998;
+}
+
+.botoes-social .facebook:hover {
+    background: #514d4d;
+}
+
+.botoes-social .google {
+    background: #9a3c30;
+}
+
+.botoes-social .google:hover {
+    background: #514d4d;
+}
+
+.botoes-social .apple {
+    background: #33941d;
+}
+
+.botoes-social .apple:hover {
+    background: #514d4d;
+}

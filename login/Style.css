@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.esquerda {
+    flex: 1;
+    background: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.esquerda img {
+    max-width: 100%;
+    height: auto;
+}
+
+.direita {
+    flex: 1;
+    padding: 40px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.login h1 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo input[type="email"],
+.campo input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.campo input[type="email"]:focus,
+.campo input[type="password"]:focus {
+    border-color: #007bff;
+}
+
+.Select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.Select input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.Select a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.Select a:hover {
+    text-decoration: underline;
+}
+
+.fim button {
+    width: 100%;
+    background: #007bff;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.fim button:hover {
+    background: #0056b3;
+}
+
+.fim p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.fim p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.fim p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .esquerda {
+        display: none;
+    }
+
+    .direita {
+        width: 100%;
+        padding: 20px;
+    }
+}
+.social-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-login p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.botoes-social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.botoes-social button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    transition: background 0.3s;
+}
+
+.botoes-social button img {
+    width: 20px;
+    height: 20px;
+}
+
+.botoes-social .facebook {
+    background: #3b5998;
+}
+
+.botoes-social .facebook:hover {
+    background: #2d4373;
+}
+
+.botoes-social .google {
+    background: #db4437;
+}
+
+.botoes-social .google:hover {
+    background: #c13c2e;
+}
+
+.botoes-social .apple {
+    background: #615151;
+}
+
+.botoes-social .apple:hover {
+    background: #926c6c;
+}
+
+
